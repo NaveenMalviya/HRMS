@@ -1,0 +1,61 @@
+.sidebar {
+    width: 240px; /* Width of the sidebar */
+    height: 100vh; /* Full viewport height */
+    background-color: #2d2d2d; /* Dark background */
+    color: #ffffff; /* White text color */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Top of the viewport */
+    left: 0; /* Align to the left */
+    display: flex; /* Flexbox layout */
+    flex-direction: column; /* Stack children vertically */
+    padding: 1rem; /* Padding around content */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.logo-section {
+    text-align: center; /* Center the logo text */
+    margin-bottom: 2rem; /* Space below the logo */
+}
+
+.logo {
+    font-size: 24px; /* Logo text size */
+    font-weight: bold; /* Bold text */
+    color: #ffffff; /* White text color */
+}
+
+.menu-desktop {
+    flex-grow: 1; /* Allow the menu to grow */
+}
+
+.main-menu {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.main-menu li {
+    margin-bottom: 1rem; /* Space between menu items */
+}
+
+.nav-item {
+    display: block; /* Make links block elements */
+    font-size: 16px; /* Text size */
+    color: #ffffff; /* White text color */
+    text-decoration: none; /* Remove underline */
+    padding: 0.75rem 1rem; /* Padding for clickable area */
+    border-radius: 4px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.nav-item:hover {
+    background-color: #5b5b5b; /* Darker background on hover */
+    color: #ffffff; /* Keep text color white on hover */
+}
+
+/* Optional: Responsive behavior */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px; /* Adjust sidebar width on small screens */
+    }
+}
